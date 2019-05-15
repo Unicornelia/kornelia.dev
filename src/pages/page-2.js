@@ -6,10 +6,10 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to kornelia.dev</p>
-    <p>Currently under construction, please check abck later</p>
+    <SEO title="kornelia.dev" />
+    <h1>Link to my <a href='https://github.com/Unicornelia'>Github</a></h1>
+    <h1>Link to my <a href='https://unicornelia.com'>Blog</a></h1>
+
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
