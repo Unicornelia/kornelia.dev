@@ -13,7 +13,7 @@ const Layout = ({ children }: any) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{fontSize: '1rem'}}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
