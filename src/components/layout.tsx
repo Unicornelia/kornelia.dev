@@ -1,6 +1,8 @@
 import React from "react"
 import "./layout.css"
-import styled from 'styled-components';
+import { styled, ThemeProvider } from 'styled-components';
+import GlobalStyle from "../styles/GlobalStyle";
+import theme from "../styles/theme";
 
 const StyledContent = styled.div`
   display: flex;
@@ -12,16 +14,15 @@ const Layout = ({ children }: any) => {
   return (
     <>
       <div id="root">
-        <StyledContent>
-          <div id="content">
-            {children}
-            <footer style={{ fontSize: '1rem' }}>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>          </div>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <StyledContent>
+            <div id="content">
+              {children}
+            </div>
+          </StyledContent>
+        </ThemeProvider>
 
-        </StyledContent>
       </div>
     </>
   )
