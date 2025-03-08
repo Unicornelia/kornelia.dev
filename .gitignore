@@ -76,3 +76,11 @@ yarn-error.log
 
 #Idea
 .idea
+
+# Ignore mkcert-generated certificates
+*.pem
+*.crt
+*.key
+*.pfx
+*.csr
+certs/
