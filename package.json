@@ -1,14 +1,14 @@
 {
   "name": "korneliadev",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "kornelia.dev portfolio website",
   "version": "0.1.0",
   "author": "kornelia",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "start": "gatsby develop",
     "build": "gatsby build",
