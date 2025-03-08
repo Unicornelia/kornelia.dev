@@ -1,18 +1,19 @@
-import { Link } from "gatsby";
-import React from "react"
-import styled from "styled-components";
+import { Link } from "gatsby"
+import React, { useState } from "react"
+import styled from "styled-components"
 import { navLinks } from "../config"
 
 const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   width: 100%;
+  padding: 20px;
+  background-color: var(--background);
   color: var(--lightest-slate);
-  font-family: var(--font-mono);
-  counter-reset: item 0;
   z-index: 12;
-`;
+`
 
 const StyledLinks = styled.div`
   display: flex;
@@ -29,46 +30,54 @@ const StyledLinks = styled.div`
     list-style: none;
 
     li {
-      margin: 0 5px;
+      margin: 0 15px;
       position: relative;
-      counter-increment: item 1;
       font-size: var(--fz-xs);
 
       a {
         padding: 10px;
+        color: var(--text-color);
+        text-decoration: none;
 
-        &:before {
-          content: '0' counter(item) '.';
-          margin-right: 5px;
+        &:hover {
           color: var(--green);
-          font-size: var(--fz-xxs);
-          text-align: right;
         }
       }
     }
   }
-`;
+`
 
-
+const Hamburger = styled.div`
+  display: none;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
 
 const Header = () => {
-    return (
-        <header>
-            <StyledNav>
-                <p>K</p>
-                <StyledLinks>
-                    <ol>
-                        {navLinks &&
-                            navLinks.map(({ url, name }, i) => (
-                                <li key={i}>
-                                    <Link to={url}>{name}</Link>
-                                </li>
-                            ))}
-                    </ol>
-                </StyledLinks>
-            </StyledNav>
-        </header >
-    )
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  return (
+    <header>
+      <StyledNav>
+        <p>K</p>
+        <Hamburger onClick={toggleMenu}>☰</Hamburger>
+        <StyledLinks style={{ display: isMenuOpen ? "block" : "flex" }}>
+          <ol>
+            {navLinks &&
+              navLinks.map(({ url, name }, i) => (
+                <li key={i}>
+                  <Link to={url}>{name}</Link>
+                </li>
+              ))}
+          </ol>
+        </StyledLinks>
+      </StyledNav>
+    </header>
+  )
 }
 
 export default Header

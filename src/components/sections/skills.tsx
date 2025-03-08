@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
+import { skills } from "../../config"
 
 const StyledText = styled.div`
   ul.skills-list {
@@ -10,6 +11,7 @@ const StyledText = styled.div`
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
+    justify-content: center;
 
     li {
       position: relative;
@@ -19,7 +21,7 @@ const StyledText = styled.div`
       font-size: var(--fz-xs);
 
       &:before {
-        content: '▹';
+        content: "▹";
         position: absolute;
         left: 0;
         color: var(--green);
@@ -28,20 +30,17 @@ const StyledText = styled.div`
       }
     }
   }
-`;
+`
 
 const Skills = () => {
-
-    const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Gatsby', 'Node.js', 'Nest.js', 'TDD', 'Git', 'CSS'];
-    return (
-        <StyledText>
-            <p>Here are a few technologies I’ve been working with over the last 7 years:</p>
-
-            <ul className="skills-list">
-                {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-            </ul>
-        </StyledText>
-    )
+  return (
+    <StyledText>
+      <p>Some technologies I’ve been working with over the last 7 years:</p>
+      <ul className="skills-list">
+        {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+      </ul>
+    </StyledText>
+  )
 }
 
 export default Skills

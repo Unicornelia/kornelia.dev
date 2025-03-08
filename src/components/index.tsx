@@ -1,3 +1,8 @@
-export { default as Layout } from './layout';
-export { default as About } from './sections/about';
-export { default as Skills } from './sections/skills';
+export { default as Layout } from "./layout"
+export { default as About } from "./sections/about"
+export { default as Skills } from "./sections/skills"
+export { default as Header } from "../components/header"
+export { default as Footer } from "../components/footer"
+export { default as Experience } from "./sections/experience"
+export { default as Work } from "./sections/work"
+export { default as Contact } from "./sections/contact"

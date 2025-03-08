@@ -17,7 +17,7 @@ html {
   }
 
   ::selection {
-    background-color: var(--lightest-navy);
+    background-color: var(--lightest-teal);
     color: var(--lightest-slate);
   }
 
@@ -28,7 +28,7 @@ html {
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
+    background-color: var(--dark-teal);
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
@@ -70,7 +70,7 @@ html {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-    padding: 200px 150px;
+    padding: 100px 150px;
 
     @media (max-width: 1080px) {
       padding: 200px 100px;
@@ -166,7 +166,7 @@ html {
 }
 
 footer {
- font-size: var(--fz-xs);
+font-size: var(--fz-xs);
 font-family: var(--font-mono);
 }
 `
