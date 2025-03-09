@@ -2,8 +2,6 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { navLinks } from "../config"
-// @ts-ignore
-import Icon from "../assets/iconK.png"
 
 const StyledNav = styled.nav`
   display: flex;
@@ -62,7 +60,6 @@ const Header = () => {
   return (
     <header>
       <StyledNav>
-        <img src={Icon} alt="Github Icon" />
         <StyledLinks style={{ display: isMenuOpen ? "block" : "flex" }}>
           <ol>
             {navLinks &&
