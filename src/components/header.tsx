@@ -46,14 +46,14 @@ const StyledLinks = styled.div`
     }
   }
 `
-
-const Hamburger = styled.div`
-  display: none;
-  cursor: pointer;
-  @media (max-width: 768px) {
-    display: block;
-  }
-`
+//
+// const Hamburger = styled.div`
+//   display: none;
+//   cursor: pointer;
+//   @media (max-width: 768px) {
+//     display: block;
+//   }
+// `
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -64,7 +64,7 @@ const Header = () => {
     <header>
       <StyledNav>
         <p>K</p>
-        <Hamburger onClick={toggleMenu}>☰</Hamburger>
+        {/*<Hamburger onClick={toggleMenu}>☰</Hamburger>*/}
         <StyledLinks style={{ display: isMenuOpen ? "block" : "flex" }}>
           <ol>
             {navLinks &&
