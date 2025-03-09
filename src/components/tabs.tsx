@@ -8,7 +8,7 @@ const TabsContainer = styled.div`
     width: 100%;
     max-height: 600px;
     margin: auto;
-    border: 1px solid var(--dark-teal);
+    border: 1px solid var(--teal);
     border-radius: 2px;
     overflow: hidden;
 `;
@@ -40,7 +40,7 @@ const Tab = styled.button<{ active: boolean }>`
 const ContentWrapper = styled.div`
     flex: 1;
     padding: 20px;
-    background: var(--dark-green-tint);
+    background: var(--dark-teal);
     min-height: 120px;
     display: flex;
     align-items: center;

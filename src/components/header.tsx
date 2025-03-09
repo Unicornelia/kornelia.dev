@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { navLinks } from "../config"
+// @ts-ignore
+import Icon from "../assets/iconK.png"
 
 const StyledNav = styled.nav`
   display: flex;
@@ -13,6 +15,11 @@ const StyledNav = styled.nav`
   background-color: var(--background);
   color: var(--lightest-slate);
   z-index: 12;
+    
+    img {
+        height: 20px;
+        width: 20px;
+    }
 `
 
 const StyledLinks = styled.div`
@@ -46,14 +53,6 @@ const StyledLinks = styled.div`
     }
   }
 `
-//
-// const Hamburger = styled.div`
-//   display: none;
-//   cursor: pointer;
-//   @media (max-width: 768px) {
-//     display: block;
-//   }
-// `
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -63,8 +62,7 @@ const Header = () => {
   return (
     <header>
       <StyledNav>
-        <p>K</p>
-        {/*<Hamburger onClick={toggleMenu}>☰</Hamburger>*/}
+        <img src={Icon} alt="Github Icon" />
         <StyledLinks style={{ display: isMenuOpen ? "block" : "flex" }}>
           <ol>
             {navLinks &&

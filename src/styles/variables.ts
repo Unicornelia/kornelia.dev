@@ -3,6 +3,7 @@ import { css } from 'styled-components';
 const variables = css`
     :root {
         --dark-teal: #05141e;
+        --teal: #123247;
         --lightest-teal: #1a535b;
         --navy-shadow: rgba(6, 22, 47, 0.7);
         --dark-slate: #57647e;

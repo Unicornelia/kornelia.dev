@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+// @ts-ignore
 import Icon from "../../assets/github-colored-logo.png"
 
 const StyledAboutSection = styled.div`
