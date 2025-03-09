@@ -42,9 +42,9 @@ const config: GatsbyConfig = {
       options: {
         // You can add multiple tracking ids and a page view event will be fired for all of them.
         trackingIds: [
-          "GA-TRACKING_ID", // Google Analytics / GA
-          "AW-CONVERSION_ID", // Google Ads / Adwords / AW
-          "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+          // "GA-TRACKING_ID", // Google Analytics / GA
+          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
@@ -62,7 +62,7 @@ const config: GatsbyConfig = {
           // Avoids sending page view hits from custom paths
           exclude: ["/preview/**", "/do-not-track/me/too/"],
           // Defaults to https://www.googletagmanager.com
-          origin: "YOUR_SELF_HOSTED_ORIGIN",
+          // origin: "YOUR_SELF_HOSTED_ORIGIN",
           // Delays processing page view events on route update (in milliseconds)
           delayOnRouteUpdate: 0,
         },
