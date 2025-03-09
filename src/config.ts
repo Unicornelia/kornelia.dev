@@ -64,8 +64,8 @@ export const jobTabs = [
       "Led software development and testing, delivering creative solutions from inception to delivery. Contributed to challenging automotive industry projects, focusing on microservices and front-end development. Also worked on a large-scale customer service platform for METRO, using Java, Spring Boot, React, Redux, Kubernetes, and Docker.",
   },
   {
-    title: "Graduate Consultant Software Developer - Thoughtworks UK",
-    company: "CoachHub",
+    title: "Graduate Consultant Software Developer",
+    company: "Thoughtworks UK",
     content:
       "Built mobile applications for the banking industry using Clojure, React Native, and GraphQL. Participated in ThoughtWorks University's immersive training in business and software development, working in cross-functional, multicultural teams.",
   },
