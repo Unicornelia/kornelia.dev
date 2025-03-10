@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { navLinks } from "../config"
+import Icon from "../assets/iconK.png"
 
 const StyledNav = styled.nav`
   display: flex;
@@ -13,11 +14,11 @@ const StyledNav = styled.nav`
   background-color: var(--background);
   color: var(--lightest-slate);
   z-index: 12;
-    
-    img {
-        height: 20px;
-        width: 20px;
-    }
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
 `
 
 const StyledLinks = styled.div`
@@ -60,6 +61,9 @@ const Header = () => {
   return (
     <header>
       <StyledNav>
+        <p>
+          <img src={Icon} alt="Github Icon" />
+        </p>
         <StyledLinks style={{ display: isMenuOpen ? "block" : "flex" }}>
           <ol>
             {navLinks &&

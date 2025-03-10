@@ -21,35 +21,35 @@ const TabList = styled.div`
 `
 
 const Tab = styled.button<{ active: boolean }>`
-  position: relative;
-  flex: 1;
-  padding: 12px;
-  font-size: var(--fz-xs);
-  background: ${({ active }) =>
-    active ? "var(--dark-teal)" : "var(--green-tint)"};
-  color: ${({ active }) => (active ? "var(--green)" : "var(--lightest-teal)")};
-  font-weight: ${({ active }) => (active ? "bold" : "normal")};
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  border: none;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
+    position: relative;
+    flex: 1;
+    padding: 12px;
+    font-size: var(--fz-xs);
+    background: ${({ active }) =>
+            active ? "var(--dark-teal)" : "var(--green-tint)"};
+    color: ${({ active }) => (active ? "var(--green)" : "var(--lightest-teal)")};
+    font-weight: ${({ active }) => (active ? "bold" : "normal")};
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 
-  &:hover {
-    background: var(--navy-shadow);
-  }
+    &:hover {
+        background: var(--navy-shadow);
+    }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: #0073e6;
-    opacity: ${({ active }) => (active ? 1 : 0)};
-    transition: opacity 0.3s ease-in-out;
-  }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: #0073e6;
+        opacity: ${({ active }) => (active ? 1 : 0)};
+        transition: opacity 0.3s ease-in-out;
+    }
 `
 
 const ContentWrapper = styled.div`

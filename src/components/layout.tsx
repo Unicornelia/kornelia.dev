@@ -3,7 +3,7 @@ import { styled, ThemeProvider } from "styled-components"
 import GlobalStyle from "../styles/GlobalStyle"
 import theme from "../styles/theme"
 import { Helmet } from "react-helmet"
-import './layout.css'
+import "./layout.css"
 
 const StyledContent = styled.div`
   display: flex;
