@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-// @ts-ignore
 import Icon from "../../assets/github-colored-logo.png"
+import { Link } from "gatsby"
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -17,9 +17,9 @@ const Work = () => {
   return (
     <StyledAboutSection id="work">
       <h3>Check out my Github</h3>
-      <a href="https://github.com/Unicornelia" target="_blank">
+      <Link to="https://github.com/Unicornelia" target="_blank">
         <img src={Icon} alt="Github Icon" />
-      </a>
+      </Link>
     </StyledAboutSection>
   )
 }

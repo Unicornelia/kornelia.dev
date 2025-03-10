@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <StyledExperienceSection id="experience">
       <h2>Places I have worked at</h2>
-      <Tabs/>
+      <Tabs />
     </StyledExperienceSection>
   )
 }

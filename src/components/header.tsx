@@ -61,9 +61,9 @@ const Header = () => {
   return (
     <header>
       <StyledNav>
-        <p>
-          <img src={Icon} alt="Github Icon" />
-        </p>
+        <Link to="/">
+          <img src={Icon} alt="Logo" />
+        </Link>
         <StyledLinks style={{ display: isMenuOpen ? "block" : "flex" }}>
           <ol>
             {navLinks &&
