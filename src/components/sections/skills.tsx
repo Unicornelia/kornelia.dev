@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { skills } from "../../config"
 
-const StyledText = styled.div`
+const StyledText = styled.section`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));

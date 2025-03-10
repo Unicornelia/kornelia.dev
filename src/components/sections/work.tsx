@@ -3,7 +3,7 @@ import styled from "styled-components"
 // @ts-ignore
 import Icon from "../../assets/github-colored-logo.png"
 
-const StyledAboutSection = styled.div`
+const StyledAboutSection = styled.section`
   max-width: 900px;
   justify-items: center;
 
@@ -16,7 +16,7 @@ const StyledAboutSection = styled.div`
 const Work = () => {
   return (
     <StyledAboutSection id="work">
-      <h3>Github</h3>
+      <h3>Check out my Github</h3>
       <a href="https://github.com/Unicornelia" target="_blank">
         <img src={Icon} alt="Github Icon" />
       </a>
