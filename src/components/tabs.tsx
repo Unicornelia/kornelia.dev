@@ -6,7 +6,7 @@ import { jobTabs } from "../config"
 const TabsContainer = styled.div`
   display: flex;
   width: 100%;
-  max-height: 600px;
+  max-height: fit-content;
   margin: auto;
   border: 1px solid var(--teal);
   border-radius: 2px;
