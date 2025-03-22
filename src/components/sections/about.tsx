@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
+  justify-items: center;
 `
 
 const About = () => {

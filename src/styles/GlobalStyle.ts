@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import variables from './variables';
+import { createGlobalStyle } from "styled-components"
+import variables from "./variables"
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
@@ -73,13 +73,13 @@ html {
     padding: 100px 150px;
 
     @media (max-width: 1080px) {
-      padding: 200px 100px;
+      padding: 100px 100px;
     }
     @media (max-width: 768px) {
-      padding: 150px 50px;
+      padding: 50px 50px;
     }
     @media (max-width: 480px) {
-      padding: 125px 25px;
+      padding: 25px 25px;
     }
 
     &.fillHeight {
@@ -98,8 +98,8 @@ html {
   }
 
   section {
-    // margin: 0 auto;
-    padding: 100px 0;
+     margin: 0 auto;
+    padding: 50px 0;
     max-width: 1000px;
 
     @media (max-width: 768px) {

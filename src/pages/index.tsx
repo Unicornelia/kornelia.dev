@@ -24,7 +24,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <StyledMainContainer>
         <About />
         <Skills />
-        <Experience />
+        {/*<Experience />*/}
         <Work />
         <Contact />
       </StyledMainContainer>

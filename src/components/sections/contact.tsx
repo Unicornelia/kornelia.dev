@@ -6,14 +6,14 @@ import { Link } from "gatsby"
 const StyledContactSection = styled.section`
   max-width: 900px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   .button {
     color: var(--lightest-teal);
     background-color: transparent;
     border: 1px solid var(--lightest-teal);
     border-radius: var(--border-radius);
-    padding: 1.25rem 1.75rem;
+    padding: 1rem 1rem;
     margin: 0 1.25rem;
     font-size: var(--fz-sm);
     font-family: var(--font-mono);

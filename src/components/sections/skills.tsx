@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { skills } from "../../config"
 
 const StyledText = styled.section`
+  justify-items: center;
+    
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -17,7 +19,7 @@ const StyledText = styled.section`
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-family: var(--font-mono);
+      font-family: var(--font-mono), serif;
       font-size: var(--fz-xs);
 
       &:before {

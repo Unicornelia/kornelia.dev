@@ -20,14 +20,20 @@ export const skills = [
   "Gatsby",
   "Node.js",
   "Nest.js",
+  "Next.js",
   "GraphQL",
   "PostgreSQL",
+  "MongoDB",
   "SQL",
   "TDD",
+  "Unit Testing",
+  "E2E Testing",
   "Webpack",
+  "Vite",
   "Jest",
   "Git",
   "CSS",
+  "TailwindCSS",
 ]
 
 export const colors = {
@@ -48,35 +54,35 @@ export const jobTabs = [
   {
     title: "Fullstack Developer ",
     company: "CoachHub",
-    time: 'Sept 2020 - April 2024',
+    time: "Sept 2020 - April 2024",
     content:
       "In this role, I contributed to the development of scalable web applications using React, Nest.js, GraphQL, TypeScript and TDD to mention a few. \n\n I collaborated with cross-functional teams to design, implement, and maintain features that directly impacted user engagement and platform growth. \n\n As a fullstack developer I was responsible for building and maintaining both the user-facing and backend components of the application. Ensured code quality and reliability using Jest and Cypress while optimizing performance with Webpack and Babel. Managed deployments with Heroku, Docker, and Kubernetes, and maintained a robust database structure with PostgreSQL. Collaborated in an Agile/Scrum environment, leveraging Git for version control and adhering to best practices in HTML5 and CSS3.",
   },
   {
     title: "Fullstack Javascript Developer",
     company: "Kinsta",
-    time: 'July 2019 - Sept 2020',
+    time: "July 2019 - Sept 2020",
     content:
       " Applied clean code practices and design patterns to develop readable, maintainable, and scalable code for a web application in a premium web hosting service. Improved existing code using SOLID design principles and ensured code quality through unit and integration testing, applying Test-Driven Development (TDD). Implemented agile methodologies with technologies such as React, Node.js, Express, TypeScript, GraphQL, Jest, Webpack, Babel, RethinkDB, MariaDB, Docker, SQL, HTML5, CSS3, and Git in a Scrum environment.",
   },
   {
     title: "Consultant Software Developer",
     company: "Thoughtworks DE",
-    time: 'Sept 2017 - June 2019',
+    time: "Sept 2017 - June 2019",
     content:
       "Led software development and testing, delivering creative solutions from inception to delivery. Contributed to challenging automotive industry projects, focusing on microservices and front-end development. Also worked on a large-scale customer service platform for METRO, using Java, Spring Boot, React, Redux, Kubernetes, and Docker.",
   },
   {
     title: "Graduate Consultant Software Developer",
     company: "Thoughtworks UK",
-    time: 'Feb 2017 - Sept 2017',
+    time: "Feb 2017 - Sept 2017",
     content:
       "Built mobile applications for the banking industry using Clojure, React Native, and GraphQL. Participated in ThoughtWorks University's immersive training in business and software development, working in cross-functional, multicultural teams.",
   },
   {
     title: "PhD Researcher and Medical Psychology Teacher",
     company: "Semmelweis University, Institute of Behavioural Medicine",
-    time: 'Sept 2017 - Sept 2012',
+    time: "Sept 2017 - Sept 2012",
     content:
       "Managed research projects, analyzed data, and served as the Hungarian administrator for the ProYouth portal, which focuses on enhancing mental health care for young people through technology. Taught medical psychology to 3rd-year medical students in English. Completed a PhD in Behavioral Sciences/Psychology, focusing on advancing knowledge in the field of behavioral medicine.",
   },
